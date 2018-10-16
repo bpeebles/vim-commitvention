@@ -1,0 +1,19 @@
+*commitvention.txt*  A commit message helper
+
+Author: Byron Peebles <https://github.com/bpeebles>
+License: Sames term as Vim itself (see |license|)
+
+This plugin is only available if 'compatible' is not set.
+
+INTRODUCTION                                *commitvention*
+
+Whenever you open a Git commit window, this plugin tries to make that
+expereince as pleasant as possible.
+
+ABOUT                                       *commitvention-about*
+
+The latest version and ability to report bugs are on GitHub:
+
+https://github.com/bpeebles/vim-commitvention
+
+ vim:tw=78:et:ft=help:norl:

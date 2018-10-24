@@ -1,7 +1,7 @@
 " vim-commitvention - A Vim package to make commit writing bettter
 " Maintainer: Byron Peebles <https:github.com/bpeebles/>
 " Location: plugin/commitvention.vim
-" Version: 0.1
+" Version: 0.1.1
 
 if exists('g:loaded_commitvention') || v:version < 700 || &compatible
   finish
@@ -9,7 +9,7 @@ endif
 let g:loaded_commitvention = 1
 
 let g:commitvention_branch_patterns = [
-      \       '[A-Z][A-Z0-9]*-[0-9]*'
+      \     '[A-Z][A-Z0-9]*-[0-9]*'
       \ ]
 
 let g:commitvention_branch_regex = '^# On branch \([^ ]*\)$'

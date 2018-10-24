@@ -20,6 +20,16 @@ name, leading the commit subject as follows::
 This will pick up the branch ID, if it can find it, from the default Git commit message template and
 prepend it to the first line with a following space.
 
+Install
+-------
+
+Install with Vim's native package installing or something like `vim-plug
+<https://github.com/junegunn/vim-plug>` (which I currently use in my `NeoVim configuration
+<https://github.com/bpeebles/dotvim>`) add this to your ``vimrc`` and run ``PlugInstall`` after
+restarting::
+
+    Plug 'bpeebles/vim-commitvention'
+
 What's next
 -----------
 

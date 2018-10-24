@@ -10,6 +10,14 @@ INTRODUCTION                                *commitvention*
 Whenever you open a Git commit window, this plugin tries to make that
 expereince as pleasant as possible.
 
+CONFIGURATION                               *commitvention-configuration*
+
+You can override the patterns matching branch names; the default is:
+>
+    let g:commitvention_branch_patterns = [
+        \     '[A-Z][A-Z0-9]*-[0-9]*'
+        \ ]
+<
 ABOUT                                       *commitvention-about*
 
 The latest version and ability to report bugs are on GitHub:

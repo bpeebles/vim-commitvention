@@ -31,7 +31,7 @@ endfunction
 
 function! s:create_commit_subject() abort
   let l:branch = s:get_branch()
-  if l:branch !=# ''
+  if l:branch !=# '' && getline(1) !~ '^' . l:branch
     for l:pattern in g:commitvention_branch_patterns
       if match(l:branch, l:pattern) != -1
         let l:failed = append(0, l:branch . ' ')

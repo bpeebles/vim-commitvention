@@ -1,5 +1,5 @@
 " vim-commitvention - A Vim package to make commit writing bettter
-" Maintainer: Byron Peebles <https:github.com/bpeebles/>
+" Maintainer: Byron Peebles <https://github.com/bpeebles/>
 " Location: plugin/commitvention.vim
 " Version: 0.1.2
 

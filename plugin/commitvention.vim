@@ -20,13 +20,13 @@ function! s:get_branch() abort
   endif
 
   let l:branch_line = search(g:commitvention_branch_regex, 'ncw')
-  if l:branch_line > 0
-    let l:line = getline(l:branch_line)
-    let l:branch = matchlist(l:line, g:commitvention_branch_regex)
-    return l:branch[1]
+  if l:branch_line <= 0
+    return ''
   endif
 
-  return ''
+  let l:line = getline(l:branch_line)
+  let l:branch = matchlist(l:line, g:commitvention_branch_regex)
+  return l:branch[1]
 endfunction
 
 function! s:create_commit_subject() abort
@@ -34,8 +34,7 @@ function! s:create_commit_subject() abort
   if l:branch !=# '' && getline(1) !~ '^' . l:branch
     for l:pattern in g:commitvention_branch_patterns
       if match(l:branch, l:pattern) != -1
-        let l:failed = append(0, l:branch . ' ')
-        let l:pos = cursor(1, 999)
+        call setline(1, l:branch . ' ' . getline(1))
         break
       endif
     endfor
